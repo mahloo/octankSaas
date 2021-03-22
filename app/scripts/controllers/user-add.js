@@ -17,7 +17,8 @@ angular.module('clientApp').controller('UserAddCtrl', function ($scope, $locatio
       firstName: $scope.user.firstName,
       lastName: $scope.user.lastName,
       userName: $scope.user.userName,
-      role: $scope.user.role
+      role: $scope.user.role,
+      mobile: $scope.user.mobile
     };
 
     $http.post(Constants.USER_MANAGER_URL + '/user', user)
@@ -26,6 +27,7 @@ angular.module('clientApp').controller('UserAddCtrl', function ($scope, $locatio
         $scope.user.firstName = '';
         $scope.user.lastName = '';
         $scope.user.userName = '';
+        $scope.user.mobile = '';
         $scope.user.role = $rootScope.userRole;
         $route.reload();
       })

@@ -29,7 +29,8 @@ angular.module('clientApp').controller('UserEditCtrl', function ($scope, $locati
       'userName': $scope.user.userName,
       'firstName': $scope.user.firstName,
       'lastName': $scope.user.lastName,
-      'role': $scope.user.role
+      'role': $scope.user.role,
+      'mobile': $scope.user.mobile
     };
 
     $http.put(Constants.USER_MANAGER_URL + '/user', user)

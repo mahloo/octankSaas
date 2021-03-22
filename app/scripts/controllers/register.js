@@ -21,7 +21,8 @@ angular.module('clientApp').controller('RegisterCtrl', function ($scope, $http, 
 				email: $scope.tenant.email,
 				userName: $scope.tenant.email,
 				firstName: $scope.tenant.firstName,
-				lastName: $scope.tenant.lastName
+				lastName: $scope.tenant.lastName,
+				mobile: $scope.tenant.mobile
 			};
 
 			$http.post(Constants.TENANT_REGISTRATION_URL + '/reg', tenant)
