@@ -21,6 +21,7 @@ angular.module('clientApp').factory('httpRequestInterceptor', function ($rootSco
   };
 });
 
+
 angular.module('clientApp').config(function ($routeProvider, $httpProvider, $locationProvider) {
   $httpProvider.defaults.useXDomain = true;
   delete $httpProvider.defaults.headers.common['X-Requested-With'];
