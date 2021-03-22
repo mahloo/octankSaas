@@ -17,7 +17,8 @@ angular.module('clientApp')
     // CLAIM_MANAGER_URL: 'http://localhost:3015',
     // SYSTEM_REGISTRATION_URL: 'http://localhost:3011',
 
-    AUTH_MANAGER_URL: 'DOMAIN_URL',
+    //AUTH_MANAGER_URL: 'DOMAIN_URL',
+    AUTH_MANAGER_URL: 'https://zb49ur0xf6.execute-api.eu-central-1.amazonaws.com/v1',
     USER_MANAGER_URL: 'DOMAIN_URL',
     TENANT_MANAGER_URL: 'DOMAIN_URL',
     TENANT_REGISTRATION_URL: 'DOMAIN_URL',
