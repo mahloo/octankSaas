@@ -9,5 +9,11 @@
       <label for="password">Password</label>
       <input type="password" name="password" id="password" class="form-control" ng-model="password" required="" />
     </div>
+    <div class="form-actions">
+      <button type="submit" class="btn btn-primary">Login</button>
+      <br/>
+      <br/>
+      <div ng-if="error" class="alert alert-danger">{{ error }}</div>
+    </div>
   </form>
 </div>
