@@ -1,0 +1,35 @@
+<div align="right">
+  <a class="btn btn-primary" href="#!/claim/add"><span class="glyphicon glyphicon-plus"></span> Add Claim</a>
+</div>
+<table class="table table-striped">
+  <thead>
+  <th>Claim Title</th>
+  <th>Claim Added By</th>
+  <th>Claim Date</th>
+  <th>One Car Accident</th>
+  <th>Other Party</th>
+  <th></th>
+  </thead>
+  <tbody>
+  <col width="18%">
+  <col width="20%">
+  <col width="22%">
+  <col width="10%">
+  <col width="20%">
+  <col width="10%">
+  <tr ng-repeat="claim in claims | orderBy: '-datePlaced'">
+    <td>{{ claim.title }}</td>
+    <td>{{ claim.claimedBy }}</td>
+    <td>{{ claim.dateClaimed | date:'MM-dd-yyyy HH:mm:ss' }}</td>
+    <td>{{ claim.oneCar }}</td>
+    <td>{{ claim.user2 }}</td>
+    <td>
+      <div class="button-group">
+        <a ng-href="/#!/claim/edit/{{ claim.claim_id }}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <a ng-href="/#!/claim/delete/{{ claim.claim_id }}"><span class="glyphicon glyphicon-trash"></span></a>
+      </div>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</div>
