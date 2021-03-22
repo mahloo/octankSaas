@@ -52,36 +52,6 @@ angular.module('clientApp').config(function ($routeProvider, $httpProvider, $loc
         controller: 'ConfirmCtrl',
         controllerAs: 'confirm'
       })
-      .when('/users', {
-        templateUrl: 'views/users.html',
-        controller: 'UsersCtrl',
-        controllerAs: 'users'
-      })
-      .when('/tenants', {
-        templateUrl: 'views/tenants.html',
-        controller: 'TenantsCtrl',
-        controllerAs: 'tenants'
-      })
-      .when('/tenant/edit/:id', {
-        templateUrl: 'views/tenant-edit.html',
-        controller: 'TenantEditCtrl',
-        controllerAs: 'tenantEdit'
-      })
-      .when('/tenant/delete/:id', {
-        templateUrl: 'views/tenant-delete.html',
-        controller: 'TenantDeleteCtrl',
-        controllerAs: 'tenantDelete'
-      })
-       .when('/users', {
-        templateUrl: 'views/users.html',
-        controller: 'UsersCtrl',
-        controllerAs: 'users'
-      })
-      .when('/user/add', {
-        templateUrl: 'views/user-add.html',
-        controller: 'UserAddCtrl',
-        controllerAs: 'userAdd'
-      })
       .when('/user/edit/:id', {
         templateUrl: 'views/user-edit.html',
         controller: 'UserEditCtrl',
@@ -202,7 +172,7 @@ angular.module('clientApp').run(function ($rootScope, $location, $http, Constant
         enabled = $rootScope.isSystemUser();
       }
       else if (viewLocation === '/users') {
-        enabled = $rootScope.isAdminUser();
+        enabled = $rootScope.isSystemUser();
       }
       else if (viewLocation === '/claims') {
         //enabled = $rootScope.isTenantUser();
