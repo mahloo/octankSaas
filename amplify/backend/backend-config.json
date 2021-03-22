@@ -6,20 +6,5 @@
       "service": "Lambda"
     }
   },
-  "api": {
-    "octank2": {
-      "service": "API Gateway",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "octanksaasc7ba1f62",
-          "attributes": [
-            "Name",
-            "Arn"
-          ]
-        }
-      ]
-    }
-  }
+  "api": {}
 }
