@@ -11,14 +11,12 @@ import { listClaimBootcamps } from './graphql/queries';
 
 angular.module('clientApp').controller('ClaimsCtrl', function ($scope, $http, Constants) {
   
-  async function fetchClaims() {
-    const apiData = await API.graphql({ query: listClaimBootcamps});
-    const claimsFromAPI = apiData.data.listClaimBootcamps.items;
-    $scope.claims = claimsFromAPI;
+  const apiData = await API.graphql({ query: listClaimBootcamps});
+  const claimsFromAPI = apiData.data.listClaimBootcamps.items;
+  $scope.claims = claimsFromAPI;
 //    var response = await API.graphql(graphqlOperation(listRestaurants))
   //  this.restaurants = (response as any).data.listRestaurants.items;
 
-  }
   /*
   $http.get(Constants.CLAIM_MANAGER_URL + '/claims')
     .then(function(response) {
