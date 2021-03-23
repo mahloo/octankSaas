@@ -1,9 +1,5 @@
 'use strict';
 
-import Amplify from 'aws-amplify'
-import config from './aws-exports'
-Amplify.configure(config)
-
 /**
  * @ngdoc overview
  * @name clientApp
