@@ -1,3 +1,10 @@
 {
+  "function": {
+    "octanksaasc7ba1f62": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
   "api": {}
 }

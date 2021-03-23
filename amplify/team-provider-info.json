@@ -1,15 +1,15 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-octanksaas-dev-92141-authRole",
-      "UnauthRoleArn": "arn:aws:iam::380736158110:role/amplify-octanksaas-dev-92141-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::380736158110:role/amplify-octanksaas-dev-92141-authRole",
+      "AuthRoleName": "amplify-octanksaas-dev-114831-authRole",
+      "UnauthRoleArn": "arn:aws:iam::380736158110:role/amplify-octanksaas-dev-114831-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::380736158110:role/amplify-octanksaas-dev-114831-authRole",
       "Region": "eu-central-1",
-      "DeploymentBucketName": "amplify-octanksaas-dev-92141-deployment",
-      "UnauthRoleName": "amplify-octanksaas-dev-92141-unauthRole",
-      "StackName": "amplify-octanksaas-dev-92141",
-      "StackId": "arn:aws:cloudformation:eu-central-1:380736158110:stack/amplify-octanksaas-dev-92141/cde676b0-8bb0-11eb-a90a-06470aecb6cc",
-      "AmplifyAppId": "d7kdoddg30s7w"
+      "DeploymentBucketName": "amplify-octanksaas-dev-114831-deployment",
+      "UnauthRoleName": "amplify-octanksaas-dev-114831-unauthRole",
+      "StackName": "amplify-octanksaas-dev-114831",
+      "StackId": "arn:aws:cloudformation:eu-central-1:380736158110:stack/amplify-octanksaas-dev-114831/27466a90-8afc-11eb-86d5-02e71ad80288",
+      "AmplifyAppId": "dp0py5ac9ab2z"
     }
   }
 }
