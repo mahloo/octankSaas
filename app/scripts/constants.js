@@ -22,7 +22,7 @@ angular.module('clientApp')
     USER_MANAGER_URL: 'https://zb49ur0xf6.execute-api.eu-central-1.amazonaws.com/v1',
     TENANT_MANAGER_URL: 'https://zb49ur0xf6.execute-api.eu-central-1.amazonaws.com/v1',
     TENANT_REGISTRATION_URL: 'https://zb49ur0xf6.execute-api.eu-central-1.amazonaws.com/v1',
-    CLAIM_MANAGER_URL: 'https://zb49ur0xf6.execute-api.eu-central-1.amazonaws.com/v1',
+    CLAIM_MANAGER_URL: 'https://4i424xsua3.execute-api.eu-central-1.amazonaws.com/V1',
     SYSTEM_REGISTRATION_URL: 'https://zb49ur0xf6.execute-api.eu-central-1.amazonaws.com/v1',
     SYSTEM_ADMIN_ROLE: 'SystemAdmin',
     SYSTEM_SUPPORT_ROLE: 'SystemUser',
