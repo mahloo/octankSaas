@@ -8,7 +8,7 @@
  * Controller of the clientApp
  */
 angular.module('clientApp').controller('ClaimsCtrl', function ($scope, $http, Constants) {
-  $http.get(Constants.CLAIM_MANAGER_URL + '/userclaims')
+  $http.get(Constants.CLAIM_MANAGER_URL + '/claims')
     .then(function(response) {
       $scope.claims = response.data;
     })
