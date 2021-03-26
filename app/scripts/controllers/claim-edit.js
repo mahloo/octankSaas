@@ -30,7 +30,7 @@ angular.module('clientApp').controller('ClaimEditCtrl', function ($scope, $locat
       claimedBy: $rootScope.currentUser,
       dateClaimed: $scope.claim.dateClaimed,
       oneCar: $scope.claim.oneCar,
-      driver2: $scope.claim.user2
+      driver2: $scope.claim.driver2
     };
 
     $http.put(Constants.CLAIM_MANAGER_URL + '/claim', claim)

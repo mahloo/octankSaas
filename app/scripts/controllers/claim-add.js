@@ -17,7 +17,7 @@ angular.module('clientApp').controller('ClaimAddCtrl', function ($scope, $locati
       dateClaimed: new Date($scope.claim.dateClaimed),
       claimedBy: $rootScope.currentUser,
       oneCar: $scope.claim.oneCar,
-      driver2: $scope.claim.user2
+      driver2: $scope.claim.driver2
     };
 
     $http.post(Constants.CLAIM_MANAGER_URL + '/claim', claim)
